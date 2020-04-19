@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: $defaultTextColor;
+  background-image: url(../img/woodbg.jpg);
+}
+
+h1 {
+  @include headingStyle();
+
+  &.login-heading {
+    text-align: center;
+  }
+}
+
+a {
+  color: $defaultTextColor;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+p {
+    margin: 0;
+}
+
+.clear {
+  height: 0;
+  clear: both;
+}
+
+.content-background {
+  width: $contentWidth;
+  background-image: url(../img/wrapper.png);
+  background-repeat: repeat-y;
+  min-height: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+
+  .content-container {
+    padding: 25px 85px 25px 150px;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  margin-bottom: 0;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-color: $defaultTextColor;
+  color: #fff;
+  background-color: $eatopiaRed;
+  cursor: pointer;
+  background: -webkit-linear-gradient($eatopiaRed,#8c0000);
+  background: -o-linear-gradient($eatopiaRed,#8c0000);
+  background: -moz-linear-gradient($eatopiaRed,#8c0000);
+  background: linear-gradient($eatopiaRed,#8c0000);
+  border: 1px solid $defaultTextColor;
+  border-radius: 4px;
+}
+
+.text-block {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $defaultTextColor;
+  background-color: #dbdbdb;
+  font-weight: 700;
+}

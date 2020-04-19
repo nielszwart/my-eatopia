@@ -1,0 +1,55 @@
+{{ define "content" }}
+<div class="recipes">
+  <h1 class="recipes-heading">Recepten (3)</h1>
+  <div class="text-block">
+      <p>
+        Op de recepten pagina staan alle recepten die je al eens hebt uitgeprobeerd en dus door jouw hoogst persoonlijke goedkeuring zijn gekomen.
+        Bij deze lijst zul je je dus nooit afvragen of dit wel lekker gaat vinden. Die vraag heb je in het verleden al eens beantwoord!!
+      </p>
+  </div>
+
+  <div class="recipes-container">
+    <div class="search">
+      <h2>Zoek recepten</h2>
+    </div>
+
+    <div class="recipes-list">
+      {{ range .Recipes }}
+        <div class="recipe">
+          <a href="/recepten/{{ .Alias }}">
+            <div class="recipe-list-image">
+              <img src="http://www.my-eatopia.com/files/recepten/151/dahl.jpeg">
+            </div>
+            <div class="recipe-list-info">
+                <span class="title">{{ .Title }}</span>
+                <p class="description">{{ .Description }}</p>
+            </div>
+          </a>
+        </div>
+      {{ end }}
+      <!-- <div class="recipe">
+        <a href="/recepten/alias">
+          <div class="recipe-list-image">
+            <img src="http://www.my-eatopia.com/files/recepten/151/dahl.jpeg">
+          </div>
+          <div class="recipe-list-info">
+              <span class="title">Bolognese saus</span>
+              <p class="description">Dit recept komt van Gale dat weer geïnspireerd is door de moeder van Cryson #ogrecipes</p>
+          </div>
+        </a>
+      </div>
+      <div class="recipe">
+        <a href="/recepten/alias">
+          <div class="recipe-list-image">
+            <img src="http://www.my-eatopia.com/files/recepten/151/dahl.jpeg">
+          </div>
+          <div class="recipe-list-info">
+              <span class="title">Verse pesto</span>
+              <p class="description">Dit recept komt van Gale dat weer geïnspireerd is door de moeder van Cryson #ogrecipes</p>
+          </div>
+        </a>
+      </div> -->
+    </div>
+  </div>
+</div>
+{{ end }}

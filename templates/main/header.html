@@ -1,0 +1,23 @@
+{{ define "header" }}
+<div class="navigation">
+  <div class="navigation-container">
+    <a class="logo" href="/">My Eatopia</a>
+    {{ if .User.Email }}
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="/recepten">Recepten</a>
+        </li>
+        <li class="menu-item">
+          <a href="/inspiratie">Inspiratie</a>
+        </li>
+        <li class="menu-item">
+          <a href="/logout">Uitloggen</a>
+        </li>
+        <li class="menu-item">
+          <a href="/admin">Admin</a>
+        </li>
+      </ul>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

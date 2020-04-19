@@ -1,0 +1,11 @@
+$headerBackgroundColor: #474747;
+$eatopiaRed: #c00;
+$defaultTextColor: #474747;
+$contentWidth: 1170px;
+
+@mixin headingStyle() {
+  color: $eatopiaRed;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  font-size: 36px;
+  font-weight: 500;
+}

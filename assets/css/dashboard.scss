@@ -1,0 +1,32 @@
+.dashboard {
+
+  p {
+    text-align: center;
+  }
+}
+
+.block {
+  display: inline-block;
+  width: calc(33% - 20px);
+  padding: 20px 0;
+  background-color: #fff;
+  margin: 25px 20px 25px 0;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: $defaultTextColor;
+  box-shadow: 5px 5px 2px #888;
+  text-align: center;
+
+  &:hover {
+    opacity: .65;
+  }
+}
+
+.block-title {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.block-amount {
+  @include headingStyle();
+}

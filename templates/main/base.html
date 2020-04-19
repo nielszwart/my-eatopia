@@ -1,0 +1,34 @@
+{{ define "base" }}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Eatopia</title>
+
+    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link href="/assets/css/main.css" rel="stylesheet">
+
+    <!-- <script>
+      /**
+       * Redirect to selected recipe
+       */
+      function showRecipe(select) {
+        var value = select.options[select.selectedIndex].value;
+        window.location = value;
+        return;
+      }
+    </script> -->
+  </head>
+  <body>
+    {{ template "header" . }}
+
+    <div class="content-background">
+      <div class="content-container">
+        {{ template "content" . }}
+      </div>
+    </div>
+
+    {{ template "footer" . }}
+  </body>
+</html>
+{{ end }}

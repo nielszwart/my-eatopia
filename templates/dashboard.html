@@ -1,0 +1,29 @@
+{{ define "content" }}
+<div class="dashboard">
+  <h1 class="login-heading">My Eatopia</h1>
+  <p>Welkom op My Eatopia {{ .User.Name }}!</p>
+  <div class="blocks">
+    <a href="/recepten">
+      <div class="block">
+        <span class="block-title">Recepten</span>
+        <br>
+        <span class="block-amount">13</span>
+      </div>
+    </a>
+    <a href="/inspiratie">
+      <div class="block">
+        <span class="block-title">Inspiratie recepten</span>
+        <br>
+        <span class="block-amount">15</span>
+      </div>
+    </a>
+    <a href="/admin/reminders">
+      <div class="block">
+        <span class="block-title">Reminders</span>
+        <br>
+        <span class="block-amount">14</span>
+      </div>
+    </a>
+  </div>
+</div>
+{{ end }}
